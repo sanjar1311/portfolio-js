@@ -47,12 +47,14 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+  display: none;
 }
 
 
 @media only screen and(max-width: 768px) {
 
   .site-header__burger {
+    display: block;
     position: relative;
     z-index: 20;
   }
