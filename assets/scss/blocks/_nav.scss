@@ -46,3 +46,47 @@
     }
   }
 }
+
+
+@media only screen and(max-width: 768px) {
+
+  .nav__list {
+    display: none;
+  }
+
+  .site-header.nav--open .nav__list{
+    display: block;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    padding: 130px 15px 15px 15px;
+
+    animation: burger .6s ease;
+  }
+
+  .site-header.nav--open .nav__link {
+    display: block;
+    color: #fff;
+    border-bottom: 2px solid grey;
+    padding: 25px 0 8px 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+
+@keyframes burger {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

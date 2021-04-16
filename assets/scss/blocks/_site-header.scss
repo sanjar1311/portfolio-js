@@ -37,4 +37,32 @@
   }
 }
 
+.site-header__burger {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 17px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/burger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
 
+
+@media only screen and(max-width: 768px) {
+
+  .site-header__burger {
+    position: relative;
+    z-index: 20;
+  }
+
+  .site-header__logo {
+    position: relative;
+    z-index: 18;
+  }
+
+  .site-header.nav--open .site-header__burger {
+    background-image: url("../images/close.svg");
+  }
+}
