@@ -10,6 +10,7 @@
 <body>
 
   <header class="site-header">
+    <h1 class="visually-hidden">Site header</h1>
     <div class="site-header__container">
       <a class="site-header__logo" href="#">Portfolio</a>
       <nav class="nav">
@@ -30,7 +31,9 @@
   </header>
 
   <main>
+    <h1 class="visually-hidden">Main Section</h1>
     <div class="hero">
+      <h2 class="visually-hidden">Hero secton</h2>
       <div class="container hero__wrapper">
 
         <div class="hero__wrapper-left hero-left">
@@ -49,16 +52,68 @@
     </div>
 
 
-    <div class="projects" id="#projects">
-      
+    <div class="projects" id="projects">
+      <h1 class="projects__title">My Projects</h1>
+      <ul class="projects__list">
+        <li class="projects__item">
+          <a href="#" class="projects__link">
+            <img src="https://picsum.photos/id/614/360/360" alt="project" class="projects__img">
+            <p class="projects__img-title">Kinolar sayti</p>
+          </a>
+        </li>
+        <li class="projects__item">
+          <a href="#" class="projects__link">
+            <img src="https://picsum.photos/id/554/360/360" alt="project" class="projects__img">
+            <p class="projects__img-title">Kinolar sayti</p>
+          </a>
+        </li>
+        <li class="projects__item">
+          <a href="#" class="projects__link">
+            <img src="https://picsum.photos/id/694/360/360" alt="project" class="projects__img">
+            <p class="projects__img-title">Kinolar sayti</p>
+          </a>
+        </li>
+        <li class="projects__item">
+          <a href="#" class="projects__link">
+            <img src="https://picsum.photos/id/154/360/360" alt="project" class="projects__img">
+            <p class="projects__img-title">Kinolar sayti</p>
+          </a>
+        </li>
+        <li class="projects__item">
+          <a href="#" class="projects__link">
+            <img src="https://picsum.photos/id/677/360/360" alt="project" class="projects__img">
+            <p class="projects__img-title">Kinolar sayti</p>
+          </a>
+        </li>
+        <li class="projects__item">
+          <a href="#" class="projects__link">
+            <img src="https://picsum.photos/id/674/360/360" alt="project" class="projects__img">
+            <p class="projects__img-title">Kinolar sayti</p>
+          </a>
+        </li>
+      </ul>
     </div>
 
 
-    <div class="contacts" id="#contacts">
+    <div class="contacts" id="contacts">
+      <div class="contacts__container">
+        <h2 class="contacts__title">Contact section</h2>
 
+        <form class="contacts__form" action="#" method="POST" autocomplete="off">
+          <input class="contacts__input" type="email" name="email" type="text" placeholder="Enter your Email" required>
+          <input class="contacts__input" type="password" name="password" type="text" placeholder="Enter your Password" required>
+          <textarea class="contacts__input" rows="5" name="message" placeholder="Message" cols="30" rows="10" required></textarea>
+          <button class="contacts__btn btn" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
 
   </main>
+
+
+  <footer>
+    <h1 class="visually-hidden">Footer section</h1>
+  </footer>
   
   <script src="./assets/js/main.js"></script>
 </body>
