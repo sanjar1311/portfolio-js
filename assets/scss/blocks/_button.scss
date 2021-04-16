@@ -22,3 +22,11 @@
     opacity: .4;
   }
 }
+
+@media only screen and(max-width: 600px) {
+
+  .btn {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}

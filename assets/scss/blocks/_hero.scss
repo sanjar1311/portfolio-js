@@ -2,7 +2,7 @@
   background-color: #191A1D;
   padding: 100px 0 200px 0;
   position: relative;
-
+  
   &::before {
     content: "";
     position: absolute;
@@ -12,10 +12,30 @@
     height: 150px;
     background-color: #5e5e5e;
     clip-path: polygon(100% 100%, 0 0, 0 100%);
+    border: none;
   }
 }
 
 .hero__wrapper {
   display: flex;
   align-items: center;
+}
+
+
+@media only screen and(max-width:1136px) {
+
+  .hero__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media only screen and(max-width: 600px) {
+
+  .hero {
+    padding-top: 20px;
+
+    &::before {
+      height: 100px;
+    }
+  }
 }

@@ -394,6 +394,13 @@ body {
   opacity: .4;
 }
 
+@media only screen and (max-width: 600px) {
+  .btn {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
 .site-header {
   background-color: #191A1D;
   padding: 60px 0;
@@ -510,6 +517,7 @@ body {
   background-color: #5e5e5e;
   -webkit-clip-path: polygon(100% 100%, 0 0, 0 100%);
           clip-path: polygon(100% 100%, 0 0, 0 100%);
+  border: none;
 }
 
 .hero__wrapper {
@@ -519,6 +527,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 1136px) {
+  .hero__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    padding-top: 20px;
+  }
+  .hero::before {
+    height: 100px;
+  }
 }
 
 .hero-left {
@@ -540,11 +566,38 @@ body {
   color: #ABABAB;
 }
 
+@media only screen and (max-width: 1136px) {
+  .hero-left {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+  }
+  .hero-left__heading {
+    font-size: 48px;
+  }
+  .hero-left__text {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-left__heading {
+    font-size: 36px;
+  }
+  .hero-left__text {
+    font-size: 20px;
+  }
+}
+
+.hero-right {
+  width: 100%;
+}
+
 .hero-right__inner {
   background-color: #111;
-  width: 130%;
+  width: 70%;
   height: 450px;
-  display: block;
 }
 
 .hero-right__img {
@@ -554,5 +607,53 @@ body {
   margin-right: auto;
   display: block;
   padding-top: 50px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 1136px) {
+  .hero-right__inner {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 550px;
+  }
+  .hero-right__img {
+    width: 500px;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .hero-right__inner {
+    max-width: 450px;
+    height: 500px;
+  }
+  .hero-right__img {
+    width: 350px;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-right__inner {
+    max-width: 400px;
+    height: 490px;
+  }
+  .hero-right__img {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero-right__inner {
+    max-width: 320px;
+    height: 450px;
+  }
+  .hero-right__img {
+    padding-top: -50px;
+    width: 250px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
