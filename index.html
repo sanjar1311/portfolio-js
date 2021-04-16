@@ -5,24 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <link rel="stylesheet" href="assets/scss/styles.css">
 </head>
 <body>
 
-  <header>
-    <a href="#">Portfolio</a>
-    <nav>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="#">Home</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#projects">Projects</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#contacts">Contacts</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="site-header__container">
+      <a class="site-header__logo" href="#">Portfolio</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#projects">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -32,7 +35,7 @@
         <div class="hero__wrapper-left hero-left">
           <h1 class="hero-left__heading">Hi, I'm Sanjar</h1>
           <p class="hero-left__text">A web designer and developer from Southampton in the UK. I create bespoke websites to help people go further online.</p>
-          <button class="hero-left__btn">My Projects</button>
+          <a href="#" class="hero-left__btn btn">My Projects</a>
         </div>
 
         <div class="hero__wrapper-right hero-right">
