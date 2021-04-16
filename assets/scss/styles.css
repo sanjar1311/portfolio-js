@@ -912,6 +912,14 @@ body {
   padding: 15px 30px;
 }
 
+.site-footer__arrow-up {
+  position: fixed;
+  width: 40px;
+  height: 40p4;
+  right: 30px;
+  bottom: 30px;
+}
+
 @media only screen and (max-width: 768px) {
   .contacts__input {
     width: 90%;
