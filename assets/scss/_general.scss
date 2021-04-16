@@ -14,3 +14,10 @@ body {
   color: #5e5e5e;
   background-color: #5e5e5e;
 }
+
+@media only screen and(max-width: 768px) {
+
+  body {
+    margin-top: 135px;
+  }
+}

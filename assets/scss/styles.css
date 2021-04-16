@@ -359,6 +359,12 @@ body {
   background-color: #5e5e5e;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    margin-top: 135px;
+  }
+}
+
 .container {
   max-width: 1170px;
   margin-left: auto;
@@ -460,6 +466,14 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 40px 20px;
+  }
   .site-header__burger {
     display: block;
     position: relative;
