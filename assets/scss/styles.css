@@ -358,12 +358,6 @@ body {
   background-color: #eee;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-    margin-top: 135px;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -416,7 +410,19 @@ body {
 
 .site-header {
   background-color: #191A1D;
-  padding: 60px 0;
+  padding: 40px 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.site-header.site-header--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .site-header__container {
@@ -474,11 +480,6 @@ body {
 
 @media only screen and (max-width: 768px) {
   .site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
     padding: 40px 20px;
   }
   .site-header__burger {
@@ -762,7 +763,7 @@ body {
 
 .projects {
   background-color: #eee;
-  padding: 50px 0 200px 0;
+  padding: 100px 0 200px 0;
   position: relative;
   color: #111;
   margin-left: 30px;
@@ -842,10 +843,9 @@ body {
 
 .contacts {
   background-color: #191A1D;
-  padding: 100px 0 200px 0;
+  padding: 200px 0;
   position: relative;
   color: #111;
-  margin-left: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 100px 15px 280px 15px;
