@@ -1,7 +1,18 @@
 .hero-left {
   max-width: 50%;
+  padding-right: 150px;
 }
 
 .hero-left__heading {
+  color: #fff;
+  font-size: 56px;
   margin: 0;
+}
+
+.hero-left__text {
+  margin: 35px 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #ABABAB;
 }
