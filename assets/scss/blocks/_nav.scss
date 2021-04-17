@@ -8,6 +8,15 @@
 
 .nav__item {
   margin: 0 25px;
+
+  &.active {
+    & .nav__link {
+      color: #fff;
+      &::after {
+        width: 60%;
+      }
+    }
+  }
 }
 
 .nav__link {

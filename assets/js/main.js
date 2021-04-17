@@ -1,11 +1,17 @@
 const elNav = document.querySelector('.site-header')
 const elBurger = document.querySelector('.site-header__burger')
 const elHeader = document.querySelector(".site-header")
+const elNavLinks = document.querySelectorAll(".nav__item")
+const elNavList = document.querySelector(".nav__list")
 
+
+// Burger Menu
 elBurger.addEventListener('click', ()=> {
   elNav.classList.toggle('nav--open')
 })
 
+
+//  Debounce Function
 function debounce(func, wait, immediate) {
 	var timeout;
 	return function() {
@@ -21,6 +27,8 @@ function debounce(func, wait, immediate) {
 	};
 };
 
+
+//  Stiky navbar
 function onDocumentScroll(){
   if(window.scrollY >= 200) {
     elHeader.classList.add('site-header--fixed')
@@ -31,4 +39,14 @@ function onDocumentScroll(){
   }
 }
 
-window.addEventListener('scroll', debounce(onDocumentScroll, 500))
+window.addEventListener('scroll', debounce(onDocumentScroll, 200))
+
+
+//  Active Link
+elNavLinks.forEach(navItem => {
+	navItem.addEventListener('click', function() {
+		elNavList.querySelector('.active').classList.remove("active")
+
+		navItem.classList.add('active')
+	})
+})
