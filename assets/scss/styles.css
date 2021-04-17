@@ -356,6 +356,7 @@ body {
   font-family: sans-serif;
   font-size: 16px;
   background-color: #eee;
+  scroll-padding-top: 135px;
 }
 
 .visually-hidden {
@@ -512,14 +513,6 @@ body {
   margin: 0 25px;
 }
 
-.nav__item.active .nav__link {
-  color: #fff;
-}
-
-.nav__item.active .nav__link::after {
-  width: 60%;
-}
-
 .nav__link {
   text-decoration: none;
   color: #ababab;
@@ -541,6 +534,14 @@ body {
   border-radius: 1000px;
   -webkit-transition: width .3s ease;
   transition: width .3s ease;
+}
+
+.nav__link.active {
+  color: #fff;
+}
+
+.nav__link.active::after {
+  width: 60%;
 }
 
 .nav__link:hover {

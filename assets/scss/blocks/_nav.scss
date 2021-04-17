@@ -8,15 +8,6 @@
 
 .nav__item {
   margin: 0 25px;
-
-  &.active {
-    & .nav__link {
-      color: #fff;
-      &::after {
-        width: 60%;
-      }
-    }
-  }
 }
 
 .nav__link {
@@ -37,6 +28,14 @@
     margin-right: auto;
     border-radius: 1000px;
     transition: width .3s ease;
+  }
+
+  &.active {
+    color: #fff;
+    
+    &::after {
+      width: 60%;
+    }
   }
 
   &:hover {
