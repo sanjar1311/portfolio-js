@@ -714,13 +714,14 @@ body {
 }
 
 .hero-right__img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: auto;
   margin-right: auto;
   display: block;
   padding-top: 50px;
   width: 300px;
+  height: 500px;
 }
 
 @media only screen and (max-width: 1136px) {
@@ -733,7 +734,7 @@ body {
     height: 550px;
   }
   .hero-right__img {
-    width: 500px;
+    width: 400px;
     height: 600px;
   }
 }
@@ -745,7 +746,8 @@ body {
   }
   .hero-right__img {
     width: 350px;
-    padding-top: 0;
+    height: 550px;
+    padding-top: 50px;
   }
 }
 
@@ -762,11 +764,12 @@ body {
 @media only screen and (max-width: 400px) {
   .hero-right__inner {
     max-width: 320px;
-    height: 450px;
+    height: 370px;
   }
   .hero-right__img {
     padding-top: -50px;
     width: 250px;
+    height: 400px;
   }
 }
 
