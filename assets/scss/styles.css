@@ -532,7 +532,7 @@ body {
 .nav__link::after {
   content: "";
   display: block;
-  width: 0%;
+  width: 0;
   height: 6px;
   background-color: #4b6cc1;
   margin-top: 17px;
@@ -668,6 +668,7 @@ body {
   color: #fff;
   font-size: 56px;
   margin: 0;
+  white-space: nowrap;
 }
 
 .hero-left__text {
