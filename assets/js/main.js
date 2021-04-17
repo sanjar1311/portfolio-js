@@ -80,5 +80,9 @@ window.addEventListener('scroll', ()=> {
 		} else {
 			item.classList.remove('active')
 		}
+
+		item.addEventListener('click', ()=> {
+			elNav.classList.remove('nav--open')
+		})
 	})
 })

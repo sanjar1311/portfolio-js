@@ -884,6 +884,9 @@ body {
   .projects__img {
     width: 300px;
   }
+  .projects__title {
+    font-size: 48px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -979,6 +982,9 @@ body {
   .contacts__input {
     width: 90%;
     padding: 14px 28px;
+  }
+  .contacts__title {
+    font-size: 48px;
   }
 }
 
