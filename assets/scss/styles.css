@@ -819,7 +819,7 @@ body {
   color: #fff;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  margin: 0 10px;
+  margin: 5px;
   padding: 10px 25px;
   border-radius: 5px;
   cursor: pointer;
@@ -945,6 +945,9 @@ body {
 }
 
 @media only screen and (max-width: 360px) {
+  .projects__title {
+    font-size: 44px;
+  }
   .projects__link {
     margin: 15px 0;
   }
@@ -1040,6 +1043,16 @@ body {
   }
   .contacts__title {
     font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 444px) {
+  .contacts__input {
+    width: 90%;
+    padding: 14px 28px;
+  }
+  .contacts__title {
+    font-size: 36px;
   }
 }
 

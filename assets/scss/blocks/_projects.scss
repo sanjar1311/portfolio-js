@@ -39,7 +39,7 @@
   background-color: #191A1D;
   color: #fff;
   transition: all .5s ease;
-  margin: 0 10px;
+  margin: 5px;
   padding: 10px 25px;
   border-radius: 5px;
   cursor: pointer;
@@ -142,6 +142,9 @@
 
 @media only screen and(max-width: 360px) {
 
+  .projects__title {
+    font-size: 44px;
+  }
   .projects__link {
     margin: 15px 0;
   }
