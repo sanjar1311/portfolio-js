@@ -357,6 +357,7 @@ body {
   font-size: 16px;
   background-color: #eee;
   scroll-padding-top: 135px;
+  margin-top: 135px;
 }
 
 .visually-hidden {
@@ -414,15 +415,11 @@ body {
   padding: 40px 0;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-}
-
-.site-header.site-header--fixed {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 20;
-  -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 

@@ -60,17 +60,13 @@ elBurger.addEventListener('click', ()=> {
 window.addEventListener('scroll', ()=> {
 	let fromTop = window.scrollY;
 
-	if(window.scrollY >= 200) {
-		elHeader.classList.add('site-header--fixed')
-		document.body.style.marginTop= elHeader.clientHeight + 'px'
-	} else {
-		elHeader.classList.remove('site-header--fixed')
-		document.body.style.marginTop = 0
-	}
-
 	elNavLinks.forEach(item => {
 		const section = document.querySelector(item.hash)
 		if(
+			elHeader.offsetTop <= fromTop &&
+			elHeader.offsetTop + elHeader.offsetHeight > fromTop
+		) {
+		} else if(
 			section.offsetTop <= fromTop &&
 			section.offsetTop + section.offsetHeight > fromTop
 		) {
