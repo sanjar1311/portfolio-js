@@ -54,81 +54,16 @@
 
     <div class="projects" id="projects">
       <h1 class="projects__title">My Projects</h1>
-      <ul class="projects__list">
-
-        <li class="projects__item">
-          <img src="./assets/images/stroy-control.png" alt="project" class="projects__img">
-          <div class="projects__item-center">
-            <p>HTML, Scss, Js</p>
-            <p>Строй Контроль</p>
-          </div>
-          <div class="projects__item-bottom">
-            <a class="projects__link" href="https://stroy-kontrol-sanjar.netlify.app" class="projects__img-title" target="_blank">View site</a>
-            <a class="projects__link" href="https://github.com/sanjar1311/stroy-kontrol" target="_blank">Github</a>
-          </div>
-        </li>
-
-        <li class="projects__item">
-          <img src="./assets/images/tmdb.png" alt="project" class="projects__img">
-          <div class="projects__item-center">
-            <p>React</p>
-            <p>TMDB movies</p>
-          </div>
-          <div class="projects__item-bottom">
-            <a class="projects__link" href="https://rmdbmoviesuz.netlify.app" class="projects__img-title" target="_blank">View site</a>
-            <a class="projects__link" href="https://github.com/sanjar1311/tmdbmovies" target="_blank">Github</a>
-          </div>
-        </li>
-
-        <li class="projects__item">
-          <img src="./assets/images/filter.png" alt="project" class="projects__img">
-          <div class="projects__item-center">
-            <p>HTML, Css, Js</p>
-            <p>Grandma</p>
-          </div>
-          <div class="projects__item-bottom">
-            <a class="projects__link" href="https://filter-project-cackes.netlify.app" class="projects__img-title" target="_blank">View site</a>
-            <a class="projects__link" href="https://github.com/sanjar1311/p-8--filter-project" target="_blank">Github</a>
-          </div>
-        </li>
-
-        <li class="projects__item">
-          <img src="./assets/images/myteab.png" alt="project" class="projects__img">
-          <div class="projects__item-center">
-            <p>HTML, Scss, Js</p>
-            <p>My-team</p>
-          </div>
-          <div class="projects__item-bottom">
-            <a class="projects__link" href="https://myteam-sanjar.netlify.app" class="projects__img-title" target="_blank">View site</a>
-            <a class="projects__link" href="https://github.com/sanjar1311/myteam" target="_blank">Github</a>
-          </div>
-        </li>
-
-        <li class="projects__item">
-          <img src="./assets/images/dental.png" alt="project" class="projects__img">
-          <div class="projects__item-center">
-            <p>HTML, Scss, Js</p>
-            <p>Dental Practice</p>
-          </div>
-          <div class="projects__item-bottom">
-            <a class="projects__link" href="https://dental-practice-sanjar.netlify.app" class="projects__img-title" target="_blank">View site</a>
-            <a class="projects__link" href="https://github.com/sanjar1311/dental-practic" target="_blank">Github</a>
-          </div>
-        </li>
-
-        <li class="projects__item">
-          <img src="./assets/images/fylo.png" alt="project" class="projects__img">
-          <div class="projects__item-center">
-            <p>HTML, Scss, Js</p>
-            <p>Fylo</p>
-          </div>
-          <div class="projects__item-bottom">
-            <a class="projects__link" href="https://fylo-sanjar.netlify.app" class="projects__img-title" target="_blank">View site</a>
-            <a class="projects__link" href="https://github.com/sanjar1311/fylo" target="_blank">Github</a>
-          </div>
-        </li>
-
-      </ul>
+      <div class="projects__btn-group">
+        <button class="projects__btn projects__all-btn">All</button>
+        <button class="projects__btn projects__react-btn">React</button>
+        <button class="projects__btn projects__js-btn">HTML, Css, Js</button>
+      </div>
+      <form class="projects__form" action="https://echo.htmlacademy.ru" method="POST" autocomplete="off">
+        <input class="projects__input" type="text" name="lang" placeholder="html, css, js, react..." required>
+        <button class="projects__search-btn">Search</button>
+      </form>
+      <ul class="projects__list"></ul>
     </div>
 
 
@@ -136,7 +71,7 @@
       <div class="contacts__container">
         <h2 class="contacts__title">Contact section</h2>
 
-        <form class="contacts__form" action="#" method="POST" autocomplete="off">
+        <form class="contacts__form" action="http://echo.htmlacademy.ru" method="POST" autocomplete="off">
           <input class="contacts__input" type="email" name="email" type="text" placeholder="Enter your Email" required>
           <input class="contacts__input" type="password" name="password" type="text" placeholder="Enter your Password" required>
           <textarea class="contacts__input" rows="5" name="message" placeholder="Message" cols="30" rows="10" required></textarea>
@@ -173,19 +108,19 @@
 
   <!--  T E M P L A T E   -->
 
-  <!-- <template class="projects-item-template">
+  <template class="projects-item-template">
     <li class="projects__item">
       <img src="./assets/images/stroy-control.png" alt="project" class="projects__img">
       <div class="projects__item-center">
-        <p>HTML, Scss, Js</p>
+        <p class="projects__langs">HTML, Scss, Js</p>
         <p class="projects__item-title">Строй Контроль</p>
       </div>
       <div class="projects__item-bottom">
-        <a class="projects__link" href="https://stroy-kontrol-sanjar.netlify.app" class="projects__img-title" target="_blank">View site</a>
-        <a class="projects__link" href="https://github.com/sanjar1311/stroy-kontrol" target="_blank">Github</a>
+        <a class="projects__link projects__netlify" href="https://stroy-kontrol-sanjar.netlify.app" target="_blank">View site</a>
+        <a class="projects__link projects__git" href="https://github.com/sanjar1311/stroy-kontrol" target="_blank">Github</a>
       </div>
     </li>
-  </template> -->
+  </template> 
 
   
   <script src="./assets/js/main.js"></script>
