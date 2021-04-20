@@ -103,7 +103,7 @@ function displayProjects(array) {
 		projectItem.querySelector(".projects__netlify").href = array[i].netlify
 		projectItem.querySelector(".projects__git").href = array[i].git
 		for(let m = 0; m < array[i].lang.length; m++) {
-				projectItem.querySelector(".projects__langs").textContent = array[i].lang[m]
+				projectItem.querySelector(".projects__langs").textContent += array[i].lang[m] + " "
 			}
 			
 			projectsFragment.appendChild(projectItem)
